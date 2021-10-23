@@ -1,21 +1,21 @@
 export const characters = [
     {
       id: 1,
-      name: 'Mario',
+      name: 'mario',
       image: './Assets/Images/mario.png',
-      sounds: 'big.rone@gmail.com'
+      sounds: ''
     },
     {
       id: 2,
-      name: 'Brant Roble',
-      image: 'Kick Socks',
-      sounds: 'kicksocks@gmail.com'
+      name: 'luigi',
+      image: './Assets/Images/luigi.png',
+      sounds: ''
     },
     {
       id: 3,
-      name: 'Jermey James',
-      image: 'Jerm',
-      sounds: 'callmejerm@gmail.com'
+      name: 'peach',
+      image: './Assets/Images/dry-bowser.png',
+      sounds: ''
     },
     {
       id: 4,

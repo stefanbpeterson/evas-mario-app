@@ -6,7 +6,7 @@ export class Card extends Component {
     render() {
         return (
             <div>
-                <img alt={characters[0].name} src={} />
+                <img alt={characters[2].name} src={require(`${characters[2].image}`).default} />
             </div>
         )
     }
