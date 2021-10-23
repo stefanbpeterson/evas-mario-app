@@ -2,7 +2,7 @@ export const characters = [
     {
       id: 1,
       name: 'Mario',
-      image: "Assets/Images/mario.png",
+      image: './Assets/Images/mario.png',
       sounds: 'big.rone@gmail.com'
     },
     {
