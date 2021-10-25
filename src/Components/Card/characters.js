@@ -1,66 +1,66 @@
 export const characters = [
     {
-      id: 1,
+      id: 0,
       name: 'mario',
       image: './Assets/Images/mario.png',
-      sounds: ''
+      sounds: ['./Assets/Sounds/Mario/Its_a_me_Mario.mp3']
+    },
+    {
+      id: 1,
+      name: 'luigi',
+      image: './Assets/Images/luigi.png',
+      sounds: []
     },
     {
       id: 2,
-      name: 'luigi',
-      image: './Assets/Images/luigi.png',
-      sounds: ''
+      name: 'peach',
+      image: './Assets/Images/peach.png',
+      sounds: []
     },
     {
       id: 3,
-      name: 'peach',
-      image: './Assets/Images/dry-bowser.png',
-      sounds: ''
+      name: 'daisy',
+      image: './Assets/Images/daisy.png',
+      sounds: []
     },
     {
       id: 4,
-      name: 'Mick Morphin',
-      image: 'Lil Mick',
-      sounds: 'mick.dick@gmail.com'
+      name: 'rosalina',
+      image: './Assets/Images/rosalina.png',
+      sounds: []
     },
     {
       id: 5,
-      name: 'Dave Pimm',
-      image: 'Jailbird',
-      sounds: 'pimm4real@gmail.com'
+      name: 'toadette',
+      image: './Assets/Images/toadette.png',
+      sounds: []
     },
     {
       id: 6,
-      name: 'Katarina Marbel',
-      image: 'Marbelgirl',
-      sounds: 'marbel.girl@gmail.com'
+      name: 'toad',
+      image: './Assets/Images/toad.png',
+      sounds: []
     },
     {
       id: 7,
-      name: 'Jack Vegas',
-      image: 'Carson',
-      sounds: 'jackvegas@gmail.com'
-    },
-    {
-      id: 8,
       name: 'Tilly Whistle',
       image: 'Whist',
       sounds: 'whist@gmail.com'
     },
     {
-      id: 9,
+      id: 8,
       name: 'Cheesepants',
       image: 'Cheesepants',
       sounds: 'cheesepants@gmail.com'
     },
     {
-      id: 10,
+      id: 9,
       name: 'Evangeline Quinn',
       image: 'Evangeline Quinn',
       sounds: 'evaqp@gmail.com'
     },
     {
-      id: 11,
+      id: 10,
       name: 'Stefan Peterson',
       image: 'Dad',
       sounds: 'stefanbpeterson@gmail.com'
