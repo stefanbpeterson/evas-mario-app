@@ -1,5 +1,7 @@
 body {
-    background-image: url('../../Assets/Backgrounds/Mushroom_Kingdom.jpg')
+    background-image: url('../../Assets/Backgrounds/Mushroom_Kingdom.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .characterImage {
