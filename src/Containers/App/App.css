@@ -1,0 +1,8 @@
+body {
+    background-image: url('../../Assets/Backgrounds/Mushroom_Kingdom.jpg')
+}
+
+.characterImage {
+    max-height: 250px;
+    margin: 3%;
+}
