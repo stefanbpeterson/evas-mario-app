@@ -23,6 +23,7 @@ export class App extends Component {
         {this.state.nintendoCharacters[0].image}
         {this.state.nintendoCharacters[1].image}
         {this.state.nintendoCharacters[2].image}
+        {this.state.nintendoCharacters[3].image}
       </div>
 
     )
