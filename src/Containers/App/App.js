@@ -19,11 +19,16 @@ export class App extends Component {
   }
   render() {
     return (
-      <div>
-        {this.state.nintendoCharacters[0].image}
-        {this.state.nintendoCharacters[1].image}
-        {this.state.nintendoCharacters[2].image}
-        {this.state.nintendoCharacters[3].image}
+      <div id='app'>
+        <div id='mainTitle'>
+          <h1>Eva and Allie's <br /> <span style={{letterSpacing: '0.3vh', marginTop: '10vh'}}>NINTENDO FRIENDS</span></h1>
+        </div>
+        <div id='nintendoCharacters'>
+          {this.state.nintendoCharacters[0].image}
+          {this.state.nintendoCharacters[1].image}
+          {this.state.nintendoCharacters[2].image}
+          {this.state.nintendoCharacters[3].image}
+        </div>
       </div>
 
     )

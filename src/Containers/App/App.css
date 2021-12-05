@@ -1,3 +1,8 @@
+@font-face {
+    font-family: 'Pretendo';
+    src: url('../../Assets/Fonts/Pretendo.woff');
+}
+
 body {
     background-image: url('../../Assets/Backgrounds/Mushroom_Kingdom.jpg');
     background-repeat: no-repeat;
@@ -7,4 +12,9 @@ body {
 .characterImage {
     max-height: 250px;
     margin: 3%;
+}
+
+#mainTitle {
+    font-family: 'Pretendo';
+    text-align: center;
 }
