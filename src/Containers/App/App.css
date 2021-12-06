@@ -3,6 +3,11 @@
     src: url('../../Assets/Fonts/Pretendo.woff');
 }
 
+@font-face {
+    font-family: 'museo-sans';
+    src: url('https://use.typekit.net/ruf2ckn.css')
+}
+
 body {
     background-image: url('../../Assets/Backgrounds/Mushroom_Kingdom.jpg');
     background-repeat: no-repeat;
@@ -14,7 +19,18 @@ body {
     margin: 3%;
 }
 
+#subTitle {
+    padding: 3vh;
+    margin-top: 3vh;
+    text-align: center;
+    font-family: 'museo-sans';
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
 #mainTitle {
     font-family: 'Pretendo';
+    font-size: 1.5rem;
     text-align: center;
+    line-height: 6vh;
 }
