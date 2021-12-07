@@ -4,8 +4,8 @@
 }
 
 @font-face {
-    font-family: 'museo-sans';
-    src: url('https://use.typekit.net/ruf2ckn.css')
+    font-family: 'Open Sans', sans-serif;
+    src: url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap')
 }
 
 body {
@@ -23,9 +23,9 @@ body {
     padding: 3vh;
     margin-top: 3vh;
     text-align: center;
-    font-family: 'museo-sans';
-    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
     font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #mainTitle {

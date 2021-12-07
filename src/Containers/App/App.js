@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import CharacterCard from '../../Components/CharacterCard/CharacterCard'
 import Mario from '../../Assets/Images/mario.png'
 import Luigi from '../../Assets/Images/luigi.png'
 import Peach from '../../Assets/Images/peach.png'
@@ -7,6 +8,8 @@ import Toad from '../../Assets/Images/toad.png'
 import Yoshi from '../../Assets/Images/yoshi.png'
 import Rosalina from '../../Assets/Images/rosalina.png'
 import Bowser from '../../Assets/Images/bowser.png'
+import Goomba from '../../Assets/Images/goomba.png'
+import Boo from '../../Assets/Images/king-boo.png'
 import './App.css'
 
 export class App extends Component {
@@ -21,13 +24,17 @@ export class App extends Component {
         {name: 'Toad', image: <img className={'characterImage'} src={Toad} alt='Toad' />, sounds: [], id: 5},
         {name: 'Yoshi', image: <img className={'characterImage'} src={Yoshi} alt='Yoshi' />, sounds: [], id: 6},
         {name: 'Rosalina', image: <img className={'characterImage'} src={Rosalina} alt='Rosalina' />, sounds: [], id: 7},
-        {name: 'Bowser', image: <img className={'characterImage'} src={Bowser} alt='Bowser' />, sounds: [], id: 8}
+        {name: 'Bowser', image: <img className={'characterImage'} src={Bowser} alt='Bowser' />, sounds: [], id: 8},
+        {name: 'Goomba', image: <img className={'characterImage'} src={Goomba} alt='Goomba' />, sounds: [], id: 9},
+        {name: 'Boo', image: <img className={'characterImage'} src={Boo} alt='Boo' />, sounds: [], id: 10}
       ]
     }
   }
 
   renderCharacters() {
-
+    this.state.nintendoCharacters.map(ninChar => {
+      return ninChar.image
+    })
   }
 
   render() {
@@ -39,7 +46,7 @@ export class App extends Component {
         </div>
         
         <div id='nintendoCharacters'>
-          {this.state.nintendoCharacters[0].image}
+          {/* {this.state.nintendoCharacters[0].image}
           {this.state.nintendoCharacters[1].image}
           {this.state.nintendoCharacters[2].image}
           {this.state.nintendoCharacters[3].image}
@@ -47,9 +54,12 @@ export class App extends Component {
           {this.state.nintendoCharacters[5].image}
           {this.state.nintendoCharacters[6].image}
           {this.state.nintendoCharacters[7].image}
+          {this.state.nintendoCharacters[8].image}
+          {this.state.nintendoCharacters[9].image} */}
+          <CharacterCard 
+          nintendoCharacters={this.state.nintendoCharacters} />
         </div>
       </div>
-
     )
   }
 }
