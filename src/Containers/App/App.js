@@ -1,7 +1,8 @@
 import React, { Component } from 'react'
-import CharacterCard from '../../Components/CharacterCard/CharacterCard'
 import Mario from '../../Assets/Images/mario.png'
+import MarioSound from '../../Assets/Sounds/Mario/Its_a_me_Mario.mp3'
 import Luigi from '../../Assets/Images/luigi.png'
+import LuigiSound from '../../Assets/Sounds/Luigi/luigi_mamma_mia.wav'
 import Peach from '../../Assets/Images/peach.png'
 import Daisy from '../../Assets/Images/daisy.png'
 import Toad from '../../Assets/Images/toad.png'
@@ -10,7 +11,13 @@ import Rosalina from '../../Assets/Images/rosalina.png'
 import Bowser from '../../Assets/Images/bowser.png'
 import Goomba from '../../Assets/Images/goomba.png'
 import Boo from '../../Assets/Images/king-boo.png'
+import DryBones from '../../Assets/Images/dry-bones.png'
+import DryBonesSound from '../../Assets/Sounds/Dry-Bones/dry_bones_taunt.wav'
 import './App.css'
+
+const dryBonesAudio = new Audio(DryBonesSound)
+const marioAudio = new Audio(MarioSound)
+const luigiAudio = new Audio(LuigiSound)
 
 export class App extends Component {
   constructor(props) {
@@ -26,15 +33,22 @@ export class App extends Component {
         {name: 'Rosalina', image: <img className={'characterImage'} src={Rosalina} alt='Rosalina' />, sounds: [], id: 7},
         {name: 'Bowser', image: <img className={'characterImage'} src={Bowser} alt='Bowser' />, sounds: [], id: 8},
         {name: 'Goomba', image: <img className={'characterImage'} src={Goomba} alt='Goomba' />, sounds: [], id: 9},
-        {name: 'Boo', image: <img className={'characterImage'} src={Boo} alt='Boo' />, sounds: [], id: 10}
+        {name: 'Boo', image: <img className={'characterImage'} src={Boo} alt='Boo' />, sounds: [], id: 10},
+        {name: 'Dry Bones', image: <img className={'characterImage'} src={DryBones} alt='Dry Bones' />, sounds: [], id: 11}
       ]
     }
   }
 
-  renderCharacters() {
-    this.state.nintendoCharacters.map(ninChar => {
-      return ninChar.image
-    })
+  playDryBonesSound() {
+    dryBonesAudio.play()
+  }
+
+  playMarioSound() {
+    marioAudio.play()
+  }
+
+  playLuigiSound() {
+    luigiAudio.play()
   }
 
   render() {
@@ -46,8 +60,8 @@ export class App extends Component {
         </div>
         
         <div id='nintendoCharacters'>
-          {/* {this.state.nintendoCharacters[0].image}
-          {this.state.nintendoCharacters[1].image}
+          <img onClick={this.playMarioSound} className='characterImage' src={Mario} alt='Mario'></img>
+          <img onClick={this.playLuigiSound} className='characterImage' src={Luigi} alt='Luigi'></img>
           {this.state.nintendoCharacters[2].image}
           {this.state.nintendoCharacters[3].image}
           {this.state.nintendoCharacters[4].image}
@@ -55,9 +69,8 @@ export class App extends Component {
           {this.state.nintendoCharacters[6].image}
           {this.state.nintendoCharacters[7].image}
           {this.state.nintendoCharacters[8].image}
-          {this.state.nintendoCharacters[9].image} */}
-          <CharacterCard 
-          nintendoCharacters={this.state.nintendoCharacters} />
+          {this.state.nintendoCharacters[9].image}
+          <img onClick={this.playDryBonesSound} className='characterImage' src={DryBones} alt='Dry Bones'></img>
         </div>
       </div>
     )
