@@ -4,8 +4,11 @@ import MarioSound from '../../Assets/Sounds/Mario/Its_a_me_Mario.mp3'
 import Luigi from '../../Assets/Images/luigi.png'
 import LuigiSound from '../../Assets/Sounds/Luigi/luigi_mamma_mia.wav'
 import Peach from '../../Assets/Images/peach.png'
+import PeachSound from '../../Assets/Sounds/Peach/peach_yeah.wav'
 import Daisy from '../../Assets/Images/daisy.png'
+import DaisySound from '../../Assets/Sounds/Daisy/daisy_blown_away.wav'
 import Toad from '../../Assets/Images/toad.png'
+import ToadSound from '../../Assets/Sounds/Toad/toad_awow.wav'
 import Yoshi from '../../Assets/Images/yoshi.png'
 import Rosalina from '../../Assets/Images/rosalina.png'
 import Bowser from '../../Assets/Images/bowser.png'
@@ -18,6 +21,9 @@ import './App.css'
 const dryBonesAudio = new Audio(DryBonesSound)
 const marioAudio = new Audio(MarioSound)
 const luigiAudio = new Audio(LuigiSound)
+const peachAudio = new Audio(PeachSound)
+const daisyAudio = new Audio(DaisySound)
+const toadAudio = new Audio(ToadSound)
 
 export class App extends Component {
   constructor(props) {
@@ -47,6 +53,18 @@ export class App extends Component {
     luigiAudio.play()
   }
 
+  playPeachSound() {
+    peachAudio.play()
+  }
+
+  playDaisySound() {
+    daisyAudio.play()
+  }
+
+  playToadSound() {
+    toadAudio.play()
+  }
+
   playDryBonesSound() {
     dryBonesAudio.play()
   }
@@ -64,9 +82,9 @@ export class App extends Component {
         <div id='nintendoCharacters'>
           <img onClick={this.playMarioSound} className='characterImage' src={Mario} alt='Mario'></img>
           <img onClick={this.playLuigiSound} className='characterImage' src={Luigi} alt='Luigi'></img>
-          {this.state.nintendoCharacters[2].image}
-          {this.state.nintendoCharacters[3].image}
-          {this.state.nintendoCharacters[4].image}
+          <img onClick={this.playPeachSound} className='characterImage' src={Peach} alt='Peach'></img>
+          <img onClick={this.playDaisySound} className='characterImage' src={Daisy} alt='Daisy'></img>
+          <img onClick={this.playToadSound} className='characterImage' src={Toad} alt='Toad'></img>
           {this.state.nintendoCharacters[5].image}
           {this.state.nintendoCharacters[6].image}
           {this.state.nintendoCharacters[7].image}
