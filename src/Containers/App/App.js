@@ -39,10 +39,6 @@ export class App extends Component {
     }
   }
 
-  playDryBonesSound() {
-    dryBonesAudio.play()
-  }
-
   playMarioSound() {
     marioAudio.play()
   }
@@ -50,6 +46,12 @@ export class App extends Component {
   playLuigiSound() {
     luigiAudio.play()
   }
+
+  playDryBonesSound() {
+    dryBonesAudio.play()
+  }
+
+
 
   render() {
     return (
